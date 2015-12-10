@@ -5,10 +5,14 @@
 (def render (renderer "maple"))
 
 (defn maple
-  "FIXME: write documentation"
+  "Generate a Maple based app"
   [name]
   (let [data {:name name
               :sanitized (name-to-path name)}]
-    (main/info "Generating fresh 'lein new' maple project.")
+    (main/info "Hang on tight! Generating a fresh Maple project.")
     (->files data
-             ["src/{{sanitized}}/foo.clj" (render "foo.clj" data)])))
+             ["project.clj" (render "project.clj" data)]
+             ["README.md" (render "README.md" data)]
+             ["LICENSE" (render "LICENSE" data)]
+             ["src/{{sanitized}}/core.cljs" (render "src/maple/core.cljs" data)]
+             [".gitignore" (render ".gitignore" data)])))
