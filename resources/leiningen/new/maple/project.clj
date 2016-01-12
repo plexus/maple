@@ -1,4 +1,4 @@
-(defproject {{name}} "0.1.0-SNAPSHOT"
+(defproject {{name}} "0.1.0"
   :description ""
   :url ""
   :license {:name "Mozilla Public License 2.0"
