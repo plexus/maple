@@ -1,3 +1,3 @@
-(ns maple.core)
+(ns {{project-ns}}.core)
 
 (enable-console-print!)
