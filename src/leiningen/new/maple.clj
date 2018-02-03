@@ -18,6 +18,9 @@
              ["LICENSE" (render "LICENSE" data)]
              ["src/{{sanitized}}/core.cljs" (render "src/maple/core.cljs" data)]
              ["src/{{sanitized}}/core.clj" (render "src/maple/core.clj" data)]
+             ["test/cljs/{{sanitized}}/test_runner.cljs" (render "test/cljs/maple/test_runner.cljs" data)]
+             ["test/cljs/{{sanitized}}/core_test.cljs" (render "test/cljs/maple/core_test.cljs" data)]
+             ["test/clj/{{sanitized}}/example_test.clj" (render "test/clj/maple/example_test.clj" data)]
              [".gitignore" (render ".gitignore" data)])
   (git-init name)
   (let [repo (load-repo name)]

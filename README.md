@@ -4,7 +4,7 @@ My very own personal template.
 
 ## License
 
-All code and content Copyright © 2016 Arne Brasseur
+All code and content Copyright © 2018 Arne Brasseur
 
 Distributed under the [Mozilla Public License 2.0](https://www.mozilla.org/en-US/MPL/2.0/), see LICENSE.
 
